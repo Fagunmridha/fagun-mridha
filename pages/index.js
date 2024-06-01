@@ -1,118 +1,203 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import ProjectCard from "@/components/projects-card";
+import TechIcons from "@/components/tech-icons";
+import {
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaCss3Alt,
+  FaFigma,
+  FaGithub,
+  FaHtml5,
+  FaReact,
+} from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import {
+  IoLogoFacebook,
+  IoLogoFirebase,
+  IoLogoJavascript,
+} from "react-icons/io5";
+import ScrollTop from "@/components/scroll-top";
+import Link from "next/link";
+import { JetBrains_Mono } from "next/font/google";
+const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className={`bg-gray-100 ${jetBrainsMono.className}`}>
+      <main className="max-w-6xl mx-auto p-4">
+        <section className="h-[70vh] flex flex-col justify-center">
+          <div className="">
+            <div className="max-w-[800px]">
+              <div className="space-y-3">
+                <h2 className="text-3xl text-[#0D4F6A] font-medium">
+                  Hey! This is
+                </h2>
+                <h1 className="text-8xl text-[#0D4F6A] font-bold">
+                  Fagun Mridha
+                </h1>
+                <h3 className="text-3xl text-[#0D4F6A] font-medium">
+                  A self-taught
+                  <span className="text-blue-700">
+                    {" "}
+                    Frontend Developer <br />
+                  </span>{" "}
+                  from Bangladesh.
+                </h3>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                <div className="flex flex-row pt-4 md:pt-8">
+                  <button className="bg-blue-400 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl">
+                    Download CV
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section>
+          <div className="md:space-y-5 space-y-2">
+            <p className="text-xl font-light">About me __</p>
+            <h6 className="text-4xl">Who I am 😎</h6>
+          </div>
+          <div className="flex flex-col md:flex-row md:space-x-6 py-6 md:py-10 gap-10">
+            <div>
+              <Image
+                src="/fagun-mridha.jpg"
+                alt="pictures"
+                height={380}
+                width={400}
+                className="rounded-xl"
+              />
+            </div>
+            <div className="max-w-[600px]">
+              <p className="text-xl md:text-2xl font-normal">
+                Hi! I&apos;m Fagun Mridha, a self-taught frontend developer
+                skilled in HTML, CSS, JavaScript, and modern frameworks like
+                React and Next.js. I enjoy turning complex problems into simple,
+                beautiful, and intuitive designs. I enjoy crafting visually
+                appealing and user-friendly web applications. Currently, I
+                define myself as a beginner but, I believe in continuous
+                learning and always looking for opportunities to grow my skills
+                and knowledge. Let&apos;s connect and create something amazing
+                together!
+              </p>
+              <p className="text-xl md:text-2xl font-normal mt-2">
+                Currently, I define myself as a beginner but, I believe in
+                continuous learning and always looking for opportunities to grow
+                my skills and knowledge. Let&apos;s connect and create something
+                amazing together!
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <section className="py-10">
+          <div className="md:space-y-5 space-y-2">
+            <p className="text-xl font-light">Projects __</p>
+            <h6 className="text-4xl">Some of my recent works 📂 </h6>
+          </div>
+          <div className="flex flex-col md:flex-row py-6">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+              <ProjectCard
+                img="/sscc.png"
+                name=" Xeno EV Landing Page"
+                url="https://xenoev.com/"
+              />
+              <ProjectCard
+                img="/womany.png"
+                name="Wowmoney Landing Page"
+                url="https://wowmoney.me/"
+              />
+              <ProjectCard
+                img="/xnoev.png"
+                name="Zantrik's Service Order Form"
+                url="https://order.zantrik.com/"
+              />
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+        <section className="py-10">
+          <div className="md:space-y-5 space-y-2">
+            <p className="text-xl font-light">Tech stack __</p>
+            <h6 className="text-4xl">Tools & Technologies 👨‍💻</h6>
+          </div>
+          <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 py-6">
+            <TechIcons>
+              <FaHtml5 size={56} />
+            </TechIcons>
+            <TechIcons>
+              <FaCss3Alt size={56} />
+            </TechIcons>
+            <TechIcons>
+              <IoLogoJavascript size={56} />
+            </TechIcons>
+            <TechIcons>
+              <FaReact size={56} />
+            </TechIcons>
+            <TechIcons>
+              <IoLogoFirebase size={56} />
+            </TechIcons>
+            <TechIcons>
+              <FaGithub size={56} />
+            </TechIcons>
+            <TechIcons>
+              <FaFigma size={56} />
+            </TechIcons>
+            <TechIcons>
+              <SiRedux size={56} />
+            </TechIcons>
+          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <section className="py-10">
+          <div className="md:space-y-5 space-y-2">
+            <p className="text-xl font-light">Contacts __</p>
+            <h6 className="text-4xl">Get in touch 📲💻</h6>
+          </div>
+          <div className="border border-green-500 mt-8 shadow-lg ">
+            <div className="max-w-[880px] flex flex-col md:flex-row p-10 justify-between mx-auto space-y-7 md:space-y-0">
+              <div>
+                <p>Email 📬</p>
+                <p>fagunandy@gmail.com</p>
+              </div>
+
+              <div>
+                <p> Phone 📱</p>
+                <p>+880 1401-381242 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-10 flex justify-center">
+            <div className="flex justify-between space-x-6">
+              <Link href="https://github.com/Fagunmridha" target="blank">
+                <FaGithub size={40} />
+              </Link>
+              <Link
+                href="https://www.facebook.com/profile.php?id=100078731898525"
+                target="blank"
+              >
+                <IoLogoFacebook size={40} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/fagun-mridha/"
+                target="blank"
+              >
+                <FaLinkedinIn size={40} />
+              </Link>
+              <Link href="https://www.instagram.com/fagun_vi/" target="blank">
+                <FaInstagram size={40} />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex justify-end ">
+          <ScrollTop />
+        </section>
+      </main>
+    </div>
   );
 }
