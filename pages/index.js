@@ -46,9 +46,13 @@ export default function Home() {
                 </h3>
 
                 <div className="flex flex-row pt-4 md:pt-8">
-                  <button className="bg-blue-400 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl">
+                  <Link
+                    href="https://drive.google.com/file/d/1ZhlA_31s9hoHD0tK-rwX4v2rwZNxFOxF/view"
+                    target="blank"
+                    className="bg-blue-700 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl"
+                  >
                     Download CV
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
