@@ -20,6 +20,7 @@ import {
 import ScrollTop from "@/components/scroll-top";
 import Link from "next/link";
 import { JetBrains_Mono } from "next/font/google";
+import React from "react";
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export default function Home() {
@@ -33,9 +34,8 @@ export default function Home() {
                 <h2 className="text-3xl text-[#0D4F6A] font-medium">
                   Hey! This is
                 </h2>
-                <h1 className="text-8xl text-[#0D4F6A] font-bold">
-                  Fagun Mridha
-                </h1>
+                <h1 className="text-8xl text-[#0D4F6A] font-bold">Fagun</h1>
+                <h1 className="text-8xl text-[#0D4F6A] font-bold">Mridha</h1>
                 <h3 className="text-3xl text-[#0D4F6A] font-medium">
                   A self-taught
                   <span className="text-blue-400">
@@ -44,16 +44,6 @@ export default function Home() {
                   </span>{" "}
                   from Bangladesh.
                 </h3>
-
-                <div className="flex flex-row pt-4 md:pt-8">
-                  <Link
-                    href="https://drive.google.com/file/d/1WXm4fiGPEFOKeFPzcpQzO5LThEmSRLcm/view?usp=sharing"
-                    target="blank"
-                    className="bg-blue-400 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl hover:bg-blue-500  "
-                  >
-                    Download CV
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -91,6 +81,15 @@ export default function Home() {
                 my skills and knowledge. Let&apos;s connect and create something
                 amazing together!
               </p>
+              <div>
+                <Link
+                  href="https://drive.google.com/file/d/1WXm4fiGPEFOKeFPzcpQzO5LThEmSRLcm/view?usp=sharing"
+                  target="blank"
+                  className="bg-blue-400 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl hover:bg-blue-500  "
+                >
+                  Download CV
+                </Link>
+              </div>
             </div>
           </div>
         </section>
