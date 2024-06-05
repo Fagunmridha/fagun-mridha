@@ -38,7 +38,7 @@ export default function Home() {
                 </h1>
                 <h3 className="text-3xl text-[#0D4F6A] font-medium">
                   A self-taught
-                  <span className="text-blue-700">
+                  <span className="text-blue-400">
                     {" "}
                     Frontend Developer <br />
                   </span>{" "}
@@ -47,9 +47,9 @@ export default function Home() {
 
                 <div className="flex flex-row pt-4 md:pt-8">
                   <Link
-                    href="https://drive.google.com/file/d/1ZhlA_31s9hoHD0tK-rwX4v2rwZNxFOxF/view"
+                    href="https://drive.google.com/file/d/1WXm4fiGPEFOKeFPzcpQzO5LThEmSRLcm/view?usp=sharing"
                     target="blank"
-                    className="bg-blue-700 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl"
+                    className="bg-blue-400 py-3 px-4 rounded-full text-md font-semibold text-white shadow-xl hover:bg-blue-500  "
                   >
                     Download CV
                   </Link>
@@ -74,19 +74,18 @@ export default function Home() {
                 className="rounded-xl"
               />
             </div>
-            <div className="max-w-[600px]">
+            <div className="max-w-[600px] space-y-8">
               <p className="text-xl md:text-2xl font-normal">
                 Hi! I&apos;m Fagun Mridha, a self-taught frontend developer
                 skilled in HTML, CSS, JavaScript, and modern frameworks like
-                React and Next.js. I enjoy turning complex problems into simple,
-                beautiful, and intuitive designs. I enjoy crafting visually
-                appealing and user-friendly web applications. Currently, I
-                define myself as a beginner but, I believe in continuous
-                learning and always looking for opportunities to grow my skills
-                and knowledge. Let&apos;s connect and create something amazing
-                together!
+                React and Next.js.
               </p>
-              <p className="text-xl md:text-2xl font-normal mt-2">
+              <p className="text-xl md:text-2xl font-normal">
+                I enjoy turning complex problems into simple, beautiful, and
+                intuitive designs. I enjoy crafting visually appealing and
+                user-friendly web applications.
+              </p>
+              <p className="text-xl md:text-2xl font-normal">
                 Currently, I define myself as a beginner but, I believe in
                 continuous learning and always looking for opportunities to grow
                 my skills and knowledge. Let&apos;s connect and create something
@@ -177,22 +176,34 @@ export default function Home() {
           <div className="py-10 flex justify-center">
             <div className="flex justify-between space-x-6">
               <Link href="https://github.com/Fagunmridha" target="blank">
-                <FaGithub size={40} />
+                <FaGithub
+                  size={40}
+                  className="text-black hover:text-lime-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                />
               </Link>
               <Link
                 href="https://www.facebook.com/profile.php?id=100078731898525"
                 target="blank"
               >
-                <IoLogoFacebook size={40} />
+                <IoLogoFacebook
+                  size={40}
+                  className="text-black hover:text-lime-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/fagun-mridha/"
                 target="blank"
               >
-                <FaLinkedinIn size={40} />
+                <FaLinkedinIn
+                  size={40}
+                  className="text-black hover:text-lime-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                />
               </Link>
               <Link href="https://www.instagram.com/fagun_vi/" target="blank">
-                <FaInstagram size={40} />
+                <FaInstagram
+                  size={40}
+                  className="text-black hover:text-lime-300 hover:transition-all hover:ease-in-out hover:duration-300"
+                />
               </Link>
             </div>
           </div>

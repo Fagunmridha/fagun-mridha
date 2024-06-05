@@ -2,7 +2,7 @@ import React from "react";
 
 const TechIcons = ({ children }) => {
   return (
-    <div className="flex flex-row space-x-4 space-y-4 flex-shrink bg-lime-200 p-6 rounded-lg">
+    <div className="flex bg-lime-300 p-6 rounded-lg hover:scale-110 hover:transition-all hover:duration-500">
       {children}
     </div>
   );
