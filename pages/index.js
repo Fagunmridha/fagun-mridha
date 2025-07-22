@@ -112,7 +112,7 @@ export default function Home() {
               </p>
               <div className="pt-4">
                 <Link
-                  href="https://drive.google.com/file/d/1F3mxkInqIaUBDqecLYoYmqVbR0JVgcWa/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1cVT9H73vTWoUIBWGhbOk5weHXyDq1ttl/view?usp=sharing"
                   target="blank"
                   className="bg-violet-500 py-3 px-6 rounded-full text-lg font-semibold text-white shadow-lg hover:bg-violet-600 hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2 hover:-translate-y-1"
                 >
@@ -176,9 +176,9 @@ export default function Home() {
                   style={{ animationDelay: "0.3s" }}
                 >
                   <ProjectCard
-                    img="/womany.png"
-                    name="Wowmoney Landing Page"
-                    url="https://wowmoney.me/"
+                    img="/jantrik.png"
+                    name="Jantrik certified car service"
+                    url="https://certify.zantrik.com/"
                   />
                 </div>
                 <div
