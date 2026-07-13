@@ -1,0 +1,12 @@
+# pnpm 11 asks whether each dependency's build (postinstall) script may run.
+# Giving an explicit answer here stops the ERR_PNPM_IGNORED_BUILDS failure that
+# otherwise blocks `pnpm install` / `pnpm dev`.
+#
+# All set to false: prisma has no schema in this project (its postinstall would try
+# `prisma generate` and fail), and unrs-resolver is only an optional native speedup
+# for eslint. None are needed to run the Next.js dev server.
+allowBuilds:
+  '@prisma/client': false
+  '@prisma/engines': false
+  prisma: false
+  unrs-resolver: false
