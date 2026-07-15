@@ -159,7 +159,7 @@ export default function Home() {
             Designing & building for the web
           </h2>
 
-          <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,340px)_1fr] md:gap-14">
+          <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,400px)_1fr] md:gap-14">
             <div className="group relative">
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-brand-500/40 to-indigo-500/30 opacity-40 blur-2xl transition-opacity duration-500 group-hover:opacity-70" />
               <Image
