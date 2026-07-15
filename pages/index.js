@@ -25,6 +25,9 @@ import {
   SiDrizzle,
   SiNeon,
   SiShadcnui,
+  SiBootstrap,
+  SiVercel,
+  SiFirebase,
 } from "react-icons/si";
 import { TbApi, TbBrain } from "react-icons/tb";
 import { IoLogoFacebook, IoLogoJavascript } from "react-icons/io5";
@@ -39,27 +42,35 @@ const SectionLabel = ({ index, children }) => (
 
 const stats = [
   { value: "3+", label: "Live projects" },
-  { value: "15+", label: "Technologies" },
+  { value: "20+", label: "Technologies" },
   { value: "Full-Stack", label: "Frontend + Backend" },
 ];
 
 const techStack = [
+  // Frontend / Language
   { name: "HTML5", icon: <FaHtml5 size={44} className="text-[#E44D26]" /> },
   { name: "CSS3", icon: <FaCss3Alt size={44} className="text-[#2965F1]" /> },
   { name: "JavaScript", icon: <IoLogoJavascript size={44} className="text-[#F7DF1E]" /> },
   { name: "React", icon: <FaReact size={44} className="text-[#61DAFB] animate-spin-slow" /> },
   { name: "Next.js", icon: <SiNextdotjs size={44} className="text-white" /> },
   { name: "Tailwind", icon: <SiTailwindcss size={44} className="text-[#38BDF8]" /> },
+  { name: "Bootstrap", icon: <SiBootstrap size={44} className="text-[#7952B3]" /> },
   { name: "shadcn/ui", icon: <SiShadcnui size={44} className="text-white" /> },
   { name: "Redux", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
+  { name: "Redux Toolkit", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
+  // Backend / Database
   { name: "REST API", icon: <TbApi size={44} className="text-[#a78bfa]" /> },
   { name: "PostgreSQL", icon: <SiPostgresql size={44} className="text-[#4169E1]" /> },
   { name: "Drizzle", icon: <SiDrizzle size={44} className="text-[#C5F74F]" /> },
   { name: "Neon", icon: <SiNeon size={44} className="text-[#00E599]" /> },
   { name: "Supabase", icon: <SiSupabase size={44} className="text-[#3ECF8E]" /> },
+  // Tools / Platforms
+  { name: "GitHub", icon: <FaGithub size={44} className="text-white" /> },
   { name: "Docker", icon: <SiDocker size={44} className="text-[#2496ED]" /> },
-  { name: "AI", icon: <TbBrain size={44} className="text-[#f472b6]" /> },
+  { name: "Vercel", icon: <SiVercel size={44} className="text-white" /> },
+  { name: "Firebase", icon: <SiFirebase size={44} className="text-[#FFCA28]" /> },
   { name: "Figma", icon: <FaFigma size={44} className="text-[#F24E1E]" /> },
+  { name: "AI", icon: <TbBrain size={44} className="text-[#f472b6]" /> },
 ];
 
 const projects = [
