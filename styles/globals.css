@@ -279,6 +279,39 @@ button,
   animation: pulse-slow 6s ease-in-out infinite;
 }
 
+/* ============ RESUME PAGE (native cursor + print) ============ */
+.resume-page,
+.resume-page * {
+  cursor: auto !important;
+}
+.resume-page a,
+.resume-page button {
+  cursor: pointer !important;
+}
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .print-hide {
+    display: none !important;
+  }
+  .resume-sheet {
+    box-shadow: none !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    border: 0 !important;
+  }
+  .resume-page * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,

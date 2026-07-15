@@ -51,8 +51,7 @@ const Navbar = () => {
         </ul>
 
         <Link
-          href="https://drive.google.com/file/d/1cVT9H73vTWoUIBWGhbOk5weHXyDq1ttl/view?usp=sharing"
-          target="_blank"
+          href="/resume"
           className="group flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2 text-sm font-medium text-white transition-all hover:border-brand-500/50 hover:bg-brand-500/10"
         >
           <span>Resume</span>

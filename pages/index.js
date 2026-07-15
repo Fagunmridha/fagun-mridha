@@ -163,11 +163,11 @@ export default function Home() {
             <div className="group relative">
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-brand-500/40 to-indigo-500/30 opacity-40 blur-2xl transition-opacity duration-500 group-hover:opacity-70" />
               <Image
-                src="/fagun-mridha.jpg"
-                alt="Fagun Mridha"
-                height={440}
-                width={360}
-                className="relative w-full rounded-2xl border border-white/10 object-cover shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+                src="/fagun.jpeg"
+                alt="Md. Rakibul Abedin — Full-Stack Developer"
+                height={520}
+                width={430}
+                className="relative aspect-[4/5] w-full rounded-2xl border border-white/10 object-cover object-center shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </div>
 
@@ -199,11 +199,10 @@ export default function Home() {
               </p>
               <div className="pt-3">
                 <Link
-                  href="https://drive.google.com/file/d/1cVT9H73vTWoUIBWGhbOk5weHXyDq1ttl/view?usp=sharing"
-                  target="_blank"
+                  href="/resume"
                   className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-ink-900 transition-all hover:-translate-y-0.5 hover:shadow-glow"
                 >
-                  Download CV
+                  View Resume
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
