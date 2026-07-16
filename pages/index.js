@@ -42,39 +42,55 @@ const SectionLabel = ({ index, children }) => (
   </div>
 );
 
+const ICON = 22;
+
 const techStack = [
-  // Frontend / Language
-  { name: "HTML5", icon: <FaHtml5 size={44} className="text-[#E44D26]" /> },
-  { name: "CSS3", icon: <FaCss3Alt size={44} className="text-[#2965F1]" /> },
-  { name: "JavaScript", icon: <IoLogoJavascript size={44} className="text-[#F7DF1E]" /> },
-  { name: "TypeScript", icon: <SiTypescript size={44} className="text-[#3178C6]" /> },
-  { name: "React", icon: <FaReact size={44} className="text-[#61DAFB] animate-spin-slow" /> },
-  { name: "React Native", icon: <TbBrandReactNative size={44} className="text-[#61DAFB]" /> },
-  { name: "Next.js", icon: <SiNextdotjs size={44} className="text-white" /> },
-  { name: "Tailwind", icon: <SiTailwindcss size={44} className="text-[#38BDF8]" /> },
-  { name: "Bootstrap", icon: <SiBootstrap size={44} className="text-[#7952B3]" /> },
-  { name: "shadcn/ui", icon: <SiShadcnui size={44} className="text-white" /> },
-  { name: "Redux", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
-  { name: "Redux Toolkit", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
-  // API / Data
-  { name: "REST API", icon: <TbApi size={44} className="text-[#a78bfa]" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql size={44} className="text-[#4169E1]" /> },
-  { name: "Drizzle", icon: <SiDrizzle size={44} className="text-[#C5F74F]" /> },
-  { name: "Prisma", icon: <SiPrisma size={44} className="text-white" /> },
-  { name: "Neon", icon: <SiNeon size={44} className="text-[#00E599]" /> },
-  { name: "Supabase", icon: <SiSupabase size={44} className="text-[#3ECF8E]" /> },
-  // Tools / Platforms
-  { name: "GitHub", icon: <FaGithub size={44} className="text-white" /> },
-  { name: "Docker", icon: <SiDocker size={44} className="text-[#2496ED]" /> },
-  { name: "Vercel", icon: <SiVercel size={44} className="text-white" /> },
-  { name: "Firebase", icon: <SiFirebase size={44} className="text-[#FFCA28]" /> },
-  { name: "Figma", icon: <FaFigma size={44} className="text-[#F24E1E]" /> },
-  { name: "AI", icon: <TbBrain size={44} className="text-[#f472b6]" /> },
+  {
+    group: "Frontend",
+    items: [
+      { name: "HTML5", icon: <FaHtml5 size={ICON} className="text-[#E44D26]" /> },
+      { name: "CSS3", icon: <FaCss3Alt size={ICON} className="text-[#2965F1]" /> },
+      { name: "JavaScript", icon: <IoLogoJavascript size={ICON} className="text-[#F7DF1E]" /> },
+      { name: "TypeScript", icon: <SiTypescript size={ICON} className="text-[#3178C6]" /> },
+      { name: "React", icon: <FaReact size={ICON} className="text-[#61DAFB] animate-spin-slow" /> },
+      { name: "React Native", icon: <TbBrandReactNative size={ICON} className="text-[#61DAFB]" /> },
+      { name: "Next.js", icon: <SiNextdotjs size={ICON} className="text-white" /> },
+      { name: "Tailwind", icon: <SiTailwindcss size={ICON} className="text-[#38BDF8]" /> },
+      { name: "Bootstrap", icon: <SiBootstrap size={ICON} className="text-[#7952B3]" /> },
+      { name: "shadcn/ui", icon: <SiShadcnui size={ICON} className="text-white" /> },
+      { name: "Redux", icon: <SiRedux size={ICON} className="text-[#764ABC]" /> },
+      { name: "Redux Toolkit", icon: <SiRedux size={ICON} className="text-[#764ABC]" /> },
+    ],
+  },
+  {
+    group: "API & Data",
+    items: [
+      { name: "REST API", icon: <TbApi size={ICON} className="text-[#a78bfa]" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql size={ICON} className="text-[#4169E1]" /> },
+      { name: "Drizzle", icon: <SiDrizzle size={ICON} className="text-[#C5F74F]" /> },
+      { name: "Prisma", icon: <SiPrisma size={ICON} className="text-white" /> },
+      { name: "Neon", icon: <SiNeon size={ICON} className="text-[#00E599]" /> },
+      { name: "Supabase", icon: <SiSupabase size={ICON} className="text-[#3ECF8E]" /> },
+      { name: "Firebase", icon: <SiFirebase size={ICON} className="text-[#FFCA28]" /> },
+    ],
+  },
+  {
+    group: "Tools & Platforms",
+    items: [
+      { name: "GitHub", icon: <FaGithub size={ICON} className="text-white" /> },
+      { name: "Docker", icon: <SiDocker size={ICON} className="text-[#2496ED]" /> },
+      { name: "Vercel", icon: <SiVercel size={ICON} className="text-white" /> },
+      { name: "Figma", icon: <FaFigma size={ICON} className="text-[#F24E1E]" /> },
+      { name: "AI", icon: <TbBrain size={ICON} className="text-[#f472b6]" /> },
+    ],
+  },
 ];
+
+const techCount = techStack.reduce((n, g) => n + g.items.length, 0);
 
 const stats = [
   { value: "3+", label: "Live projects" },
-  { value: `${techStack.length}+`, label: "Technologies" },
+  { value: `${techCount}+`, label: "Technologies" },
   { value: "Frontend", label: "React & Next.js" },
 ];
 
@@ -256,10 +272,24 @@ export default function Home() {
             Tools &amp; technologies
           </h2>
 
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-            {techStack.map((t, i) => (
-              <div key={t.name} className="animate-scaleIn" style={{ animationDelay: `${0.06 * i}s` }}>
-                <TechIcons name={t.name}>{t.icon}</TechIcons>
+          <div className="mt-12 space-y-10">
+            {techStack.map((g, gi) => (
+              <div key={g.group}>
+                <div className="flex items-center gap-4">
+                  <p className="eyebrow shrink-0 text-gray-500">{g.group}</p>
+                  <span className="h-px flex-1 bg-white/10" />
+                </div>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {g.items.map((t, i) => (
+                    <div
+                      key={t.name}
+                      className="animate-scaleIn"
+                      style={{ animationDelay: `${0.15 * gi + 0.04 * i}s` }}
+                    >
+                      <TechIcons name={t.name}>{t.icon}</TechIcons>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
