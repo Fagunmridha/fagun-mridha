@@ -50,10 +50,10 @@ const education = [
 ];
 
 const skills = [
-  { label: "Languages", items: "JavaScript, HTML5, CSS3" },
-  { label: "Frontend", items: "React, Next.js, Tailwind CSS, Bootstrap, shadcn/ui" },
+  { label: "Languages", items: "JavaScript, TypeScript, HTML5, CSS3" },
+  { label: "Frontend", items: "React, Next.js, React Native (Expo), Tailwind CSS, Bootstrap, shadcn/ui" },
   { label: "State Management", items: "Redux, Redux Toolkit" },
-  { label: "API & Data Integration", items: "REST API, Next.js API Routes, PostgreSQL, Drizzle ORM, Neon, Supabase, Firebase" },
+  { label: "API & Data Integration", items: "REST API, Next.js API Routes, PostgreSQL, Drizzle ORM, Prisma, Neon, Supabase, Firebase" },
   { label: "Tools & Platforms", items: "Git & GitHub, Docker, Vercel, Figma, AI Integration" },
 ];
 
@@ -129,11 +129,11 @@ export default function Resume() {
           <section className="py-6">
             <p className="text-[15px] leading-relaxed text-gray-700">
               Self-taught Frontend Developer from Bangladesh who builds fast,
-              accessible and visually refined web applications with React &amp;
-              Next.js. Comfortable across the integration layer — consuming REST
-              APIs, managing state and data flow, and working with
-              PostgreSQL-backed services like Drizzle, Neon and Supabase to ship
-              production-ready products.
+              accessible and visually refined applications with TypeScript, React
+              &amp; Next.js. Comfortable across the integration layer — consuming
+              REST APIs, integrating AI models and APIs, and working with
+              PostgreSQL-backed services like Drizzle, Prisma, Neon and Supabase
+              to ship production-ready products.
             </p>
           </section>
 

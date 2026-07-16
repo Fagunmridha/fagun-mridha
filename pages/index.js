@@ -19,17 +19,19 @@ import {
   SiRedux,
   SiNextdotjs,
   SiTailwindcss,
+  SiTypescript,
   SiPostgresql,
   SiSupabase,
   SiDocker,
   SiDrizzle,
+  SiPrisma,
   SiNeon,
   SiShadcnui,
   SiBootstrap,
   SiVercel,
   SiFirebase,
 } from "react-icons/si";
-import { TbApi, TbBrain } from "react-icons/tb";
+import { TbApi, TbBrain, TbBrandReactNative } from "react-icons/tb";
 import { IoLogoFacebook, IoLogoJavascript } from "react-icons/io5";
 
 const SectionLabel = ({ index, children }) => (
@@ -45,7 +47,9 @@ const techStack = [
   { name: "HTML5", icon: <FaHtml5 size={44} className="text-[#E44D26]" /> },
   { name: "CSS3", icon: <FaCss3Alt size={44} className="text-[#2965F1]" /> },
   { name: "JavaScript", icon: <IoLogoJavascript size={44} className="text-[#F7DF1E]" /> },
+  { name: "TypeScript", icon: <SiTypescript size={44} className="text-[#3178C6]" /> },
   { name: "React", icon: <FaReact size={44} className="text-[#61DAFB] animate-spin-slow" /> },
+  { name: "React Native", icon: <TbBrandReactNative size={44} className="text-[#61DAFB]" /> },
   { name: "Next.js", icon: <SiNextdotjs size={44} className="text-white" /> },
   { name: "Tailwind", icon: <SiTailwindcss size={44} className="text-[#38BDF8]" /> },
   { name: "Bootstrap", icon: <SiBootstrap size={44} className="text-[#7952B3]" /> },
@@ -56,6 +60,7 @@ const techStack = [
   { name: "REST API", icon: <TbApi size={44} className="text-[#a78bfa]" /> },
   { name: "PostgreSQL", icon: <SiPostgresql size={44} className="text-[#4169E1]" /> },
   { name: "Drizzle", icon: <SiDrizzle size={44} className="text-[#C5F74F]" /> },
+  { name: "Prisma", icon: <SiPrisma size={44} className="text-white" /> },
   { name: "Neon", icon: <SiNeon size={44} className="text-[#00E599]" /> },
   { name: "Supabase", icon: <SiSupabase size={44} className="text-[#3ECF8E]" /> },
   // Tools / Platforms
@@ -173,28 +178,38 @@ export default function Home() {
             <div className="space-y-5 text-lg leading-relaxed text-gray-400">
               <p>
                 Hi, I&apos;m <span className="text-white">Fagun Mridha</span> — a
-                self-taught frontend developer from Bangladesh. I work with HTML,
-                CSS, JavaScript and modern frameworks like React and Next.js to
-                ship interfaces that feel effortless.
+                self-taught Frontend Developer from Bangladesh passionate about
+                building modern, responsive, and user-focused digital products.
               </p>
               <p>
-                An interface is only as good as the data behind it, so I&apos;m
-                just as comfortable with the{" "}
-                <span className="text-white">integration layer</span> — consuming{" "}
-                <span className="text-white">REST APIs</span>, managing state and
-                data flow, and working with{" "}
-                <span className="text-white">PostgreSQL</span> through Drizzle,
-                Neon, Supabase and Firebase on real, production-grade sites.
+                I build web and mobile applications using{" "}
+                <span className="text-white">
+                  TypeScript, React, Next.js, and React Native (Expo)
+                </span>
+                , focusing on clean, maintainable code and seamless user
+                experiences. I&apos;m experienced in integrating{" "}
+                <span className="text-white">REST APIs</span>, managing
+                application state, and working with{" "}
+                <span className="text-white">
+                  PostgreSQL, Drizzle ORM, Prisma, Neon, Supabase, and Firebase
+                </span>{" "}
+                to develop scalable, data-driven applications.
               </p>
               <p>
-                I enjoy turning complex problems into simple, beautiful and
-                intuitive products. Clean code, thoughtful details, smooth
-                interactions and solid data flow are what I care about most.
+                I also leverage modern{" "}
+                <span className="text-white">AI models and APIs</span>, including{" "}
+                <span className="text-white">OpenAI, Gemini, and Claude</span>, to
+                integrate intelligent features such as AI chatbots, content
+                generation, workflow automation, smart search, and AI-powered
+                assistants. By combining frontend development, backend
+                integrations, and AI capabilities, I build modern digital products
+                — including SaaS platforms, dashboards, e-commerce applications,
+                and business solutions.
               </p>
               <p>
-                I believe in continuous learning and I&apos;m always looking for
-                opportunities to grow. Let&apos;s connect and create something
-                great together.
+                I&apos;m passionate about solving real-world problems with
+                technology and continuously improving my skills to build products
+                that are fast, reliable, and impactful.
               </p>
               <div className="pt-3">
                 <Link
