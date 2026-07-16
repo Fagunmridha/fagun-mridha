@@ -40,12 +40,6 @@ const SectionLabel = ({ index, children }) => (
   </div>
 );
 
-const stats = [
-  { value: "3+", label: "Live projects" },
-  { value: "20+", label: "Technologies" },
-  { value: "Full-Stack", label: "Frontend + Backend" },
-];
-
 const techStack = [
   // Frontend / Language
   { name: "HTML5", icon: <FaHtml5 size={44} className="text-[#E44D26]" /> },
@@ -58,7 +52,7 @@ const techStack = [
   { name: "shadcn/ui", icon: <SiShadcnui size={44} className="text-white" /> },
   { name: "Redux", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
   { name: "Redux Toolkit", icon: <SiRedux size={44} className="text-[#764ABC]" /> },
-  // Backend / Database
+  // API / Data
   { name: "REST API", icon: <TbApi size={44} className="text-[#a78bfa]" /> },
   { name: "PostgreSQL", icon: <SiPostgresql size={44} className="text-[#4169E1]" /> },
   { name: "Drizzle", icon: <SiDrizzle size={44} className="text-[#C5F74F]" /> },
@@ -71,6 +65,12 @@ const techStack = [
   { name: "Firebase", icon: <SiFirebase size={44} className="text-[#FFCA28]" /> },
   { name: "Figma", icon: <FaFigma size={44} className="text-[#F24E1E]" /> },
   { name: "AI", icon: <TbBrain size={44} className="text-[#f472b6]" /> },
+];
+
+const stats = [
+  { value: "3+", label: "Live projects" },
+  { value: `${techStack.length}+`, label: "Technologies" },
+  { value: "Frontend", label: "React & Next.js" },
 ];
 
 const projects = [
@@ -113,20 +113,19 @@ export default function Home() {
               <span className="text-gray-300">Available for freelance & full-time</span>
             </div>
 
-            <p className="eyebrow mb-4 text-brand-400 animate-slideIn">Full-Stack Developer — Bangladesh</p>
+            <p className="eyebrow mb-4 text-brand-400 animate-slideIn">Frontend Developer (React &amp; Next.js) — Bangladesh</p>
 
             <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-7xl md:text-[5.5rem] animate-slideIn" style={{ animationDelay: "0.1s" }}>
               Fagun <span className="gradient-text">Mridha</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-400 sm:text-xl animate-slideIn" style={{ animationDelay: "0.25s" }}>
-              I build fast, accessible web apps end to end — refined interfaces
-              with <span className="text-gray-200">React</span> &{" "}
-              <span className="text-gray-200">Next.js</span>, backed by{" "}
-              <span className="text-gray-200">REST APIs</span> and{" "}
-              <span className="text-gray-200">databases</span> like PostgreSQL,
-              Supabase & Neon — connecting frontend and backend into one seamless
-              product.
+              I build fast, accessible interfaces with{" "}
+              <span className="text-gray-200">React</span> &{" "}
+              <span className="text-gray-200">Next.js</span> — then bring them to
+              life by integrating <span className="text-gray-200">REST APIs</span>{" "}
+              and handling <span className="text-gray-200">data flow</span> across
+              the app, so what ships feels effortless and stays reliable.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4 animate-slideIn" style={{ animationDelay: "0.4s" }}>
@@ -164,7 +163,7 @@ export default function Home() {
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-brand-500/40 to-indigo-500/30 opacity-40 blur-2xl transition-opacity duration-500 group-hover:opacity-70" />
               <Image
                 src="/fagun.jpeg"
-                alt="Md. Rakibul Abedin — Full-Stack Developer"
+                alt="Fagun Mridha — Frontend Developer"
                 height={520}
                 width={430}
                 className="relative aspect-[4/5] w-full rounded-2xl border border-white/10 object-cover object-center shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
@@ -174,18 +173,18 @@ export default function Home() {
             <div className="space-y-5 text-lg leading-relaxed text-gray-400">
               <p>
                 Hi, I&apos;m <span className="text-white">Fagun Mridha</span> — a
-                self-taught developer from Bangladesh. I work with HTML, CSS,
-                JavaScript and modern frameworks like React and Next.js to ship
-                interfaces that feel effortless.
+                self-taught frontend developer from Bangladesh. I work with HTML,
+                CSS, JavaScript and modern frameworks like React and Next.js to
+                ship interfaces that feel effortless.
               </p>
               <p>
-                Beyond the frontend, I&apos;m comfortable working across the{" "}
-                <span className="text-white">backend</span> too — building and
-                integrating <span className="text-white">REST APIs</span>,
-                handling <span className="text-white">databases</span> like
-                PostgreSQL with Drizzle, Neon and Supabase, and wiring up a
-                complete, reliable connection between the frontend and backend on
-                real, production-grade sites.
+                An interface is only as good as the data behind it, so I&apos;m
+                just as comfortable with the{" "}
+                <span className="text-white">integration layer</span> — consuming{" "}
+                <span className="text-white">REST APIs</span>, managing state and
+                data flow, and working with{" "}
+                <span className="text-white">PostgreSQL</span> through Drizzle,
+                Neon, Supabase and Firebase on real, production-grade sites.
               </p>
               <p>
                 I enjoy turning complex problems into simple, beautiful and
@@ -293,10 +292,6 @@ export default function Home() {
         <footer className="flex flex-col items-center justify-between gap-6 border-t border-white/10 py-10 sm:flex-row">
           <p className="font-mono text-sm text-gray-500">
             © {new Date().getFullYear()} Fagun Mridha
-          </p>
-          <p className="text-sm text-gray-500">
-            Built with <span className="text-gray-300">Next.js</span> &amp;{" "}
-            <span className="text-gray-300">Tailwind CSS</span>
           </p>
           <ScrollTop />
         </footer>

@@ -21,13 +21,13 @@ const contact = [
 
 const experience = [
   {
-    role: "Frontend / Full-Stack Developer — Intern",
+    role: "Frontend Developer — Intern",
     org: "Qubiqe Technologies",
     date: "February 2024 – May 2024",
     points: [
       "Collaborated with a multifunctional team to develop user-friendly features for their SaaS products.",
       "Built websites with impressive styling and responsiveness for local clients.",
-      "Integrated REST APIs and handled data flow between the frontend and backend services.",
+      "Integrated REST APIs into React interfaces, managing client-side state and data flow.",
     ],
   },
   {
@@ -53,7 +53,7 @@ const skills = [
   { label: "Languages", items: "JavaScript, HTML5, CSS3" },
   { label: "Frontend", items: "React, Next.js, Tailwind CSS, Bootstrap, shadcn/ui" },
   { label: "State Management", items: "Redux, Redux Toolkit" },
-  { label: "Backend & Database", items: "REST API, Next.js API Routes, PostgreSQL, Drizzle ORM, Neon, Supabase, Firebase" },
+  { label: "API & Data Integration", items: "REST API, Next.js API Routes, PostgreSQL, Drizzle ORM, Neon, Supabase, Firebase" },
   { label: "Tools & Platforms", items: "Git & GitHub, Docker, Vercel, Figma, AI Integration" },
 ];
 
@@ -106,7 +106,7 @@ export default function Resume() {
               Md. Rakibul Abedin
             </h1>
             <p className="mt-1 text-lg font-semibold text-violet-700">
-              Full-Stack Developer
+              Frontend Developer (React &amp; Next.js)
             </p>
 
             <div className="mt-4 grid grid-cols-1 gap-x-6 gap-y-1.5 text-sm text-gray-600 sm:grid-cols-2">
@@ -128,12 +128,12 @@ export default function Resume() {
           {/* Summary */}
           <section className="py-6">
             <p className="text-[15px] leading-relaxed text-gray-700">
-              Self-taught Full-Stack Developer from Bangladesh who builds fast,
-              accessible and visually refined web applications end to end. I craft
-              polished interfaces with React &amp; Next.js and back them with REST
-              APIs and databases like PostgreSQL, Drizzle, Neon and Supabase —
-              connecting frontend and backend into one seamless, production-ready
-              product.
+              Self-taught Frontend Developer from Bangladesh who builds fast,
+              accessible and visually refined web applications with React &amp;
+              Next.js. Comfortable across the integration layer — consuming REST
+              APIs, managing state and data flow, and working with
+              PostgreSQL-backed services like Drizzle, Neon and Supabase to ship
+              production-ready products.
             </p>
           </section>
 
