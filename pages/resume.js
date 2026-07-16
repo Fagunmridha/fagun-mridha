@@ -21,6 +21,16 @@ const contact = [
 
 const experience = [
   {
+    role: "Freelance Frontend Developer",
+    org: "Self-employed · Faridpur, Bangladesh",
+    date: "June 2024 – Present",
+    points: [
+      "Built and shipped production frontends for clients, including Xeno EV's product landing page and Zantrik's car-service platform.",
+      "Developed responsive, accessible interfaces with React, Next.js and Tailwind CSS, integrating REST APIs and managing client-side state.",
+      "Worked directly with clients from requirements through to deployment on Vercel.",
+    ],
+  },
+  {
     role: "Frontend Developer — Intern",
     org: "Qubiqe Technologies",
     date: "February 2024 – May 2024",
@@ -30,23 +40,12 @@ const experience = [
       "Integrated REST APIs into React interfaces, managing client-side state and data flow.",
     ],
   },
-  {
-    role: "Web Development Bootcamp",
-    org: "Webclan",
-    date: "January 2023 – December 2023",
-    points: [
-      "Completed a 1-year intensive Web Development Bootcamp, learning web development from scratch.",
-      "Gained a solid foundation in HTML, CSS and CSS libraries like Tailwind CSS and Bootstrap.",
-      "Studied JavaScript, React and modern frameworks like Next.js.",
-    ],
-  },
 ];
 
 const education = [
+  { degree: "Web Development Bootcamp (1-year intensive)", school: "Webclan", year: "2023" },
   { degree: "Masters of Social Science on Social Work", school: "Rajendra College, Faridpur", year: "2021" },
   { degree: "Bachelor of Social Science on Social Work", school: "Rajendra College, Faridpur", year: "2020" },
-  { degree: "Higher Secondary School Certificate", school: "Jhenidah CT College, Jhenidah", year: "2016" },
-  { degree: "Secondary School Certificate", school: "Safdarpur Munsur Ali Academy, Safderpur", year: "2014" },
 ];
 
 const skills = [
@@ -58,7 +57,7 @@ const skills = [
 ];
 
 const projects = [
-  { name: "Xeno EV — Landing Page", url: "https://xenoev.com/" },
+  { name: "Xeno EV Landing Page", url: "https://xenoev.com/" },
   { name: "Zantrik Certified Car Service", url: "https://certify.zantrik.com/" },
   { name: "Zantrik Service Order Form", url: "https://order.zantrik.com/" },
 ];
@@ -74,7 +73,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Md. Rakibul Abedin — Resume</title>
+        <title>Md. Rakibul Abedin (Fagun Mridha) — Resume</title>
       </Head>
 
       <div className="resume-page min-h-screen bg-neutral-200 py-8 text-gray-800 print:bg-white print:py-0">
@@ -103,7 +102,10 @@ export default function Resume() {
           {/* Header */}
           <header className="border-b border-gray-200 pb-6">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
-              Md. Rakibul Abedin
+              Md. Rakibul Abedin{" "}
+              <span className="text-2xl font-semibold text-gray-500">
+                (Fagun Mridha)
+              </span>
             </h1>
             <p className="mt-1 text-lg font-semibold text-violet-700">
               Frontend Developer (React &amp; Next.js)
@@ -214,7 +216,9 @@ export default function Resume() {
 
               <section>
                 <SectionTitle>Languages</SectionTitle>
-                <p className="text-[13.5px] text-gray-700">Bangla (Native), English</p>
+                <p className="text-[13.5px] text-gray-700">
+                  Bangla (Native), English (Professional working proficiency)
+                </p>
               </section>
             </div>
           </div>

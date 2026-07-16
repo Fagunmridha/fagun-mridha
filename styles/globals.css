@@ -305,6 +305,8 @@ button,
     margin: 0 !important;
     max-width: 100% !important;
     border: 0 !important;
+    /* @page margin already frames the sheet — the on-screen padding would double it */
+    padding: 0 !important;
   }
   .resume-page * {
     -webkit-print-color-adjust: exact !important;

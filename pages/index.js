@@ -96,8 +96,8 @@ const stats = [
 
 const projects = [
   { img: "/sscc.png", name: "Xeno EV Landing Page", url: "https://xenoev.com/", tag: "Landing Page" },
-  { img: "/jantrik.png", name: "Jantrik Certified Car Service", url: "https://certify.zantrik.com/", tag: "Web App" },
-  { img: "/xnoev.png", name: "Zantrik's Service Order Form", url: "https://order.zantrik.com/", tag: "Web App" },
+  { img: "/jantrik.png", name: "Zantrik Certified Car Service", url: "https://certify.zantrik.com/", tag: "Web App" },
+  { img: "/xnoev.png", name: "Zantrik Service Order Form", url: "https://order.zantrik.com/", tag: "Web App" },
 ];
 
 const socials = [
